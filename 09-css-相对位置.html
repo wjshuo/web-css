@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-相对位置</title>
+    <style>
+        .in{width: 100px;height: 100px;margin: 10px;}
+        .div1{background-color: red;
+            /*设置相对位置position: relative
+            参照物:是自身未偏移的位置
+            1.位置相对自身进行偏移
+            2.原来所占位置会继续保留*/
+        position: relative;left: 20px;
+            top: 20px;z-index: -1;}
+        .div2{background-color: yellow;
+        /*z-index 层叠的优先级,默认值是0,值越大优先级越高*/
+            z-index: 1;position: relative;
+        }
+        .div3{background-color: blue;
+        position: relative;top: -60px;left: -20px;z-index: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="in div1"></div>
+<div class="in div2"></div>
+<div class="in div3"></div>
+</body>
+</html>

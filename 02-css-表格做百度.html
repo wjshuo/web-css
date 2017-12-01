@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css-表格</title>
+    <style>
+        /*外层表格的线框*/
+        table{border: 1px solid gray}
+        input{width: 500px;height: 24px;
+            border:none;}
+        img{height: 30px}
+        span{background-color: blue;color: white;
+            /*margin:外边距. padding:内边距:内容与外框的边距*/
+            padding: 10px; vertical-align: middle;}
+        /*伪元素  鼠标悬浮事件*/
+        span:hover{background-color: red}
+        a:visited{}
+    </style>
+
+
+</head>
+<body>
+<table>
+    <tr>
+        <!--输入框-->
+        <td>
+            <input  type="text">
+        </td>
+        <td>
+            <img src="img/a.png" alt="camera">
+        </td>
+        <!--按钮-->
+        <td>
+            <span>百度一下</span>
+        </td>
+
+    </tr>
+
+
+</table>
+<!--复习
+选择器1.标签选择器 div{}2.类选择器 .className{}
+3.id选择器 #idName{}4.属性选择器 input[type="text"]{}
+5.通用选择器 *{} 当前界面所有都走大括号内容
+6.群组选择器 div,className,#idName{}
+
+7.子代选择器 > , div>p
+8.后代选择器  空格,div p
+
+-->
+</body>
+</html>

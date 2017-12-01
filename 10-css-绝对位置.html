@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css-绝对位置</title>
+    <style>
+        .in{width: 100px;height: 100px;margin: 10px;}
+        .div1{background-color: red;
+            /*绝对定位absolute
+            当父容器没有设置position时,
+            1.绝对定位的参考物是窗口,即body
+            2.不保留原来位置,跳出标准文档流.
+            当父容器设置流position时
+            1.参考物变为父容器
+            2.原位置还是不保留,依然会跳出标准文档流的排版模式.
+            */position: absolute;left: 60px;top: 60px;
+        }
+        .div2{background-color: yellow;
+        }
+        .div3{background-color: blue;
+        }
+        .main{border: 5px solid red;
+            /*父容器设置position*/
+            position: absolute;
+            width: 600px;height: 1000px;margin: 30px;}
+    </style>
+
+</head>
+<body>
+<div class="main">
+<div class="in div1"></div>
+<div class="in div2"></div>
+<div class="in div3"></div>
+</div>
+</body>
+</html>

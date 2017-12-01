@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-绕流</title>
+    <style>
+        .div1{border: 1px solid red;width: 600px;height: 600px;}
+        .div2{width: 100px;height: 100px;background-color: aqua;
+            float: left;
+            /*绕流 1.将颜色块设置浮动为left,向左浮动
+            2.文字块的宽度必须要大于颜色块的宽度这样文字就会自动往上窜.
+            */
+        }
+
+        .div3{color: blue;width: 150px;height: auto;background-color: beige;}
+    </style>
+
+
+</head>
+<body>
+<div class="div1">
+    <div class="div2"></div>
+    <div class="div3">爱上对方过后就哭了,今朝有酒今朝醉</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css-盒模型</title>
+    <style>
+        /*标签选择器*/
+        div{width: 100px;height: 100px;
+            /*边框*/
+            border: 1px solid black; /*内边距  :padding: 10px;*/
+       /*设置外边距.当前组件和其他的距离
+       外边距折叠:当两个相邻组件设置的margin值一样时会出现折叠情况,
+       即两个组件的间接有一个值,不会相加
+       */ margin: 10px;
+        }
+        /*类选择器*/
+        .div1{background-color: red;padding: 10px;
+          /*第一个颜色快设置下外边距为10px*/  margin-bottom: 10px; }
+        .div2{background-color: yellow;
+            /*第二个颜色快设置外边距为20px
+            当两个外边距设置的值不一样时,采用最大的值作为边距值*/margin-top: 20px;}
+        .div3{background-color: blue;}
+    </style>
+
+
+</head>
+<body>
+<!--设置3个颜色快-->
+<div class="div1"><p>剑仙李白</p></div>
+<div class="div2"><p>王昭君</p></div>
+<div class="div3"></div>
+</body>
+</html>
